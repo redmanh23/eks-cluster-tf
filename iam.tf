@@ -1,3 +1,19 @@
+resource "aws_iam_user" "user-1" {
+  name = "user-1"
+
+  tags = {
+    Name = "user-1"
+  }
+}
+
+resource "aws_iam_user" "user-2" {
+  name = "user-2"
+
+  tags = {
+    Name = "user-2"
+  }
+}
+
 resource "aws_iam_role" "demo-cluster" {
   name = "terraform-eks-demo-cluster"
 
