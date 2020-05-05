@@ -12,4 +12,11 @@ data:
       groups:
         - system:bootstrappers
         - system:nodes
-
+    - rolearn: arn:aws:iam::119178345111:user/user-1
+      username: user-1
+      groups:
+        - eks-role
+    - rolearn: arn:aws:iam::119178345111:user/user-2
+      username: user-2
+      groups:
+        - eks-role

@@ -33,6 +33,10 @@ kubectl create rolebinding user-2 --role=user-2 --user=user-2 -n user-2
 
 ##update configmap....
 
+##To run commands permanently as a specific user in the current session, update the AWS_PROFILE environment variable as shown below
+
+## export AWS_PROFILE=user-1
+
 
 
 

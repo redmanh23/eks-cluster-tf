@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::119178345111:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/92241519B748CB8CEEF46A458D0F22DE"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "oidc.eks.us-east-1.amazonaws.com/id/92241519B748CB8CEEF46A458D0F22DE:sub": "system:serviceaccount:default:external-dns"
+        }
+      }
+    }
+  ]
+}
